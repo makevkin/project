@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "account_details")
+@Table(name = "account_details", schema = "account")
 public class AccountDetails {
     @Id
     @Column(name = "id")
@@ -30,8 +30,8 @@ public class AccountDetails {
     @Column(name = "money")
     private BigDecimal money;
 
-    @Column(name = "negative_balanse")
-    private  Boolean negativ_balance;
+    @Column(name = "negative_balance")
+    private  Boolean negative_balance;
 
     @Column(name = "profile_id")
     private int profile_id;
